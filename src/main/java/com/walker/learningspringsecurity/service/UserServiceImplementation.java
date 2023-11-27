@@ -9,7 +9,7 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class UserServiceImplementation implements UserService {
-    public PasswordEncoder passwordEncoder(){
+    public PasswordEncoder passwordEncoder(){ //Vai criptografar a senha do usuário cadastrado
         return new BCryptPasswordEncoder();
     }
     @Autowired

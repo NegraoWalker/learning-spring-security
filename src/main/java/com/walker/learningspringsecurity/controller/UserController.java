@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/users")
-@RequiredArgsConstructor
+@RequiredArgsConstructor //Injeção de dependências via construtor
 public class UserController {
     private final UserService userService; //Injeção de dependências via construtor
 
